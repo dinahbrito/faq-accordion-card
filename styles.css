@@ -1,0 +1,50 @@
+
+
+/* Reset */
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Body Styling */
+body {
+ background-image: linear-gradient(180deg, #B068E9, #6463E7); 
+ background-repeat: no-repeat;
+ font-family: 'Kumbh', sans-serif;
+ font-size: 12px;
+ font-weight: 400;
+ height: 100vh;
+ line-height: 18px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32.19px;
+}
+
+hr {
+    border: 1px solid #E8E8EA;
+}
+
+.question {
+    font-size: 13px;
+    line-height: 100%;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    
+    h1 {
+        line-height: 100%;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+}
