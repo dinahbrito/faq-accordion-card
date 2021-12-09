@@ -1,13 +1,13 @@
-let question = document.getElementsByClassName("question");
-let i;
+var question = document.getElementsByClassName("question");
+var i;
 
 for (i = 0; i < question.length; i++) {
     question[i].addEventListener("click", function ()
     {
         this.classList.toggle("active");
-        let answer = this.nextElementSibling;
+        var answer = this.nextElementSibling;
         if (answer.style.maxHeight) {
-            answer.stylemaxHeight = null;
+            answer.style.maxHeight = null;
         } else {
             answer.style.maxHeight = answer.scrollHeight + "px";
         }

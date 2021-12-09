@@ -43,17 +43,22 @@ h1 {
 /* Button accordion styling */
 .question {
     color: #1E1F36;
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
     background-color: transparent;
     border: none;
     padding-bottom: 1rem;
     transition: .4s;
 }
- 
-.question:after {
-    content: url(./images/icon-arrow-down.svg);
-    float: right;
-    margin-left: 5px;
+
+.arrow {
+    height: 8px;
+    width: auto;
+}
+
+.active .arrow{
+    transform: rotate(180deg);
 }
 
 .answer {
@@ -62,9 +67,7 @@ h1 {
     transition: max-height 0.2s ease-out;
 }
 
-.active:after {
-    content: "\2212";
-  }
+
 
 .text {
     margin-top: 4rem;
