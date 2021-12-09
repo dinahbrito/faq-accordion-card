@@ -63,7 +63,7 @@ h1 {
     transform: rotate(180deg);
 }
 
-.active .question {
+.active p {
     font-weight: 700;
 }
 
@@ -75,7 +75,7 @@ h1 {
 }
 
 /* FAQ Styling */
-.text {
+/* .text {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -84,11 +84,24 @@ h1 {
     margin-right: 95px;
     max-width: 21.87rem;
     text-align: left;
+} */
+
+.text {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    height: 509px;
+    width: 920px;
 }
 
-.faq-wrapper {
-    margin-top: 43px;
-}
+.faq-container {
+    max-width: 350px;
+    max-height: 286px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 83px;
+} 
 
 hr {
     margin-top: 5px;
